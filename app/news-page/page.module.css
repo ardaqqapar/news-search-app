@@ -1,0 +1,45 @@
+.container {
+    padding: 2rem;
+    background-color: #F3F3F3;
+    margin: 2rem;
+}
+
+.backButton {
+    border-radius: 10%;
+    padding: 0.5em;
+    background-color: #e2deda;
+}
+
+.title {
+    margin-top: 1em;
+    font-size: 20px;
+}
+
+.dateAndLink {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.dateAndLink a {
+    color: blue;
+}
+
+.imageAndText { 
+    margin-top: 10px;
+}
+
+.imageAndText img {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+
+.article img {
+    float: left;
+    width:50%;
+    height: 50%;
+}
+.article p {
+    margin-bottom: 10px;
+}

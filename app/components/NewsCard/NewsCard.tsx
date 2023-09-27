@@ -11,17 +11,23 @@ const NewsCard:React.FC<NewsCardProps> = ({article}) => {
   
   return (
     <div className={styles.card}>
-        <img src={article.fields.thumbnail}/>
+      <img src={article.fields.thumbnail}/>
+      <div className={styles.info}>
         <p>{article.webPublicationDate}</p>
         <h3>{article.webTitle}</h3>
-        <Link 
-          href={{
-            pathname: '/news-page',
-            query: {
-              id: article.id,
-            },
-          }} 
-          target='_blank'>Details</Link>
+        <div className={styles.detailsButton}>
+          <Link 
+            href={{
+              pathname: '/news-page',
+              query: {
+                id: article.id,
+              },
+            }}
+          >
+            Details
+          </Link>
+        </div>
+      </div>
     </div>
   )
 }

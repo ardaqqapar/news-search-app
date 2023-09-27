@@ -1,23 +1,47 @@
 .card {
   margin-top: 5px;
-  border-radius: 10px;
-  background: rgb(206, 206, 206);
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background: #F5F5F5;
   height: 100%;
   overflow: hidden;
+  
 }
 
 .card img {
   max-width: 100%;
   width: 100%;
 }
-.card h3 {
+
+.info {
+  padding: 0.8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+.info h3 {
   font-weight: 600;
   margin-bottom: 0.7rem;
 }
 
-.card p {
-  margin: 2px;
-  
-  font-size: 0.9rem;
-  line-height: 1.5;
+.detailsButton {
+  display: flex;
+  flex-direction: row;
+}
+
+.detailsButton a {
+  background-color: #efe8df;
+  border-radius: 7px;
+  padding: 0.5em;
+}
+
+.detailsButton a:hover {
+  background-color: #F8EBCB;
 }
