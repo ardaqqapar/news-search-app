@@ -34,6 +34,9 @@ const newsSlice = createSlice({
     setPage: (state, action) => {
       state.page = action.payload;
     },
+    setNews: (state, action) => {
+      state.news = action.payload;
+    }
   },
   extraReducers: (builder) => {
     builder
@@ -57,7 +60,7 @@ export const selectNews = (state: RootState) => state.news.news;
 export const selectPage = (state: RootState) => state.news.page;
 export const selectUrl = (state: RootState) => state.news.url;
 
-export const { setUrl, setPage } = newsSlice.actions;
+export const { setUrl, setPage, setNews } = newsSlice.actions;
 
 export default newsSlice.reducer;
 
